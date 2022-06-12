@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    height: 100vh;
+
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+header {
+    background-image: url(../images/logo.svg);
+    width: 800px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.attribution {
+    margin: 2rem;
+    text-align: center; 
+}
+
+main {
+    border-radius: 1rem;
+    padding: 1.2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* the layout of output's part */
+.outputs {
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 1rem;
+
+}
+
+.outputs button {
+    position: relative;
+    border: 0;
+    width: 100%;
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+    top: 30%;
+}
+
+/* the layout for input */
+.inputs {
+    padding: 6px 36px 0px 6px;
+}
+
+#tips {
+    margin-bottom: 1.5rem;
+}
+
+.inputs input {
+    width: 100%;
+    border: 0;
+    border-radius: 0.3rem;
+    margin-top: 6px;
+    text-align: right;
+    padding: 0 0.5rem;
+
+}
+
+.tipsButton {
+    margin-top: 6px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tipsButton button {
+    border-radius: 0.3rem;
+    border: 0;
+    padding: 3px 0;
+}
+
+.customInput {
+    display: none;
+    border: 2px solid rgb(143, 227, 238);
+    border-radius: 0.3rem;
+    padding: 1px 0;
+}
+
+.custom {
+    display: inline;
+}
+
+#bills .imgs {
+    background-image: url(../images/icon-dollar.svg);  
+}
+
+#peo .imgs {
+    background-image: url(../images/icon-person.svg);
+}
+
+.inputs .imgs{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+    top: -1.2rem;
+    left: 0.5rem;
+}
+
+#peo label {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+label span {
+    text-align: right;
+}
+/* responsive design for mobil*/
+
+@media only screen and (max-width: 426px) {
+    body {
+        width: 320px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        width: 320px;
+        height: 120px;
+    }
+
+    .inputs {
+        padding: 0;
+    }
+    .tipsButton {
+        margin-top: 6px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .outputs {
+        padding: 1rem;
+    }
+
+    .outputs button{
+        top: 3%;
+    }
+
+    .attribution {
+        margin: 1rem;
+    }
+
+    #peo label {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    label span {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+:root {
+    --strongCyan-rslNr: hsl(172, 67%, 45%);
+
+    --darkCyan-btnBg: hsl(183, 100%, 15%);
+    --darkGrayish-label: hsl(186, 14%, 43%);
+    --grayishCyan-rslTxt: hsl(184, 14%, 56%);
+    --lightGrayish-bg: hsl(185, 41%, 84%);
+    --lightGrayish-input: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
+body {
+    background-color: var(--lightGrayish-bg);
+    color: var(--white);
+}
+
+.attribution a, .attribution { 
+    color: hsl(228, 45%, 44%); 
+}
+
+main {
+    background-color: var(--white);
+}
+
+label {
+    color: var(--darkGrayish-label);
+}
+
+label span {
+    color: rgba(255, 119, 0, 0.84);
+    opacity: 0;
+}
+
+button, .outputs {
+    background-color: var(--darkCyan-btnBg);
+    color: var(--white);
+}
+
+
+input, button.custom {
+    background-color: var(--lightGrayish-input);
+}
+
+input {
+    color: var(--grayishCyan-rslTxt);
+}
+
+
+button.custom {
+    color: var(--darkCyan-btnBg);
+    opacity: 0.6;
+}
+
+#tipAmount, #total {
+    color: var(--strongCyan-rslNr);
+}
+
+.result p span {
+    color: var(--grayishCyan-rslTxt);
+}
+
+.outputs button {
+    background-color: hsl(172, 67%, 45%, 0.2);
+    color: hsl(183, 100%, 15%, 0.4);
+}
+

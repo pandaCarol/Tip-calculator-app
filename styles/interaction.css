@@ -1,0 +1,22 @@
+:root {
+    --strongCyan-rslNr: hsl(172, 67%, 45%);
+
+    --darkCyan-btnBg: hsl(183, 100%, 15%);
+    --darkGrayish-label: hsl(186, 14%, 43%);
+    --grayishCyan-rslTxt: hsl(184, 14%, 56%);
+    --lightGrayish-bg: hsl(185, 41%, 84%);
+    --lightGrayish-input: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+button:not(.custom):hover {
+    background-color: hsl(173, 56%, 76%);
+    color: var(--darkCyan-btnBg);
+    cursor: pointer;
+}
+
+input:hover, .custom:hover, .customInput:hover {
+    border: 2px solid var(--strongCyan-rslNr);
+    cursor: pointer;
+    background-color: var(--lightGrayish-input);
+}
